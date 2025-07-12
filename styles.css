@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: black;
+    padding: 50px 5%;
+    margin: 0;
+    color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.616);
+}
+
+.logo {
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.5);
+    transition: 0.5s;
+}
+
+.navbar {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 25px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    opacity: 0.5;
+    color: #ffffff;
+    text-shadow:
+        0 0 10px #7e6cbd,
+        0 0 20px #7e6cbd,
+        0 0 30px #7e6cbd,
+        0 0 40px #7e6cbd;
+}
+
+.text {
+    margin-top: 15px;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.4;
+}
+
+.snowflake {
+    position: fixed;
+    top: -10px;
+    width: 9px;
+    height: 9px;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: fall linear;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+    }
+}
+
+.section {
+    font-size: 22px;
+    line-height: 1.6;
+    display: none;
+    animation: fadeIn 0.4s ease;
+}
+
+#homeSection {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.clock {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-family: Inter, sans-serif;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons a {
+    font-size: 27px;
+    color: white;
+    transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #7e6cbd;
+    transform: scale(1.2);
+}
+
+.space {
+    padding-top: 15px;
+}
